@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial=scale=1">
+    <title>Otaku World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/icon.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="genre.html">Genre</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+
+    </section>
+<!------ About Us Content ------>
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+           <h1>This is the place where Anime people come along</h1> 
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid minus libero cupiditate aperiam, adipisci corrupti voluptates rem! <br />Cupiditate perferendis dolorem, rem repudiandae voluptas, voluptatibus consequatur asperiores amet mollitia, sequi ipsum!</p>
+           <a href="genre.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/all.jpeg">
+        </div>
+    </div>
+</section>
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Finally</h4>
+    <p>Hello world this is Otaku's World where you can find great moments<br>To know more about this page follow us on our social media.</p>
+    <div class="icons">
+        <img src="images/fb.png">
+        <img src="images/twitter.png">
+        <img src="images/instagram.png">
+    </div>
+    <p>Made with <span>&#9825;</span> by Otakus</p>
+</section>
+<!--------JavaScript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navlinks");
+
+    function showMenu(){
+        navLinks.style.display = "block";
+    }
+    function hideMenu(){
+        navLinks.style.display = "none";
+    }
+</script>
+
+</body>
+</html>

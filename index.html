@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial=scale=1">
+    <title>Otaku World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/icon.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="genre.html">Genre</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>Welcome Otaku's</h1>
+        <p>This is the place where you find all the Anime possessed minds having lof of fun together<br>with all the minds alike.
+        </p>
+        <a href="contact.html" class="hero-btn">Join now to be one!</a>
+    </div>
+
+    </section>
+<!------ Course ------>
+<section class="About">
+    <h1>What is "Otaku"</h1>
+    <p>It is a japanese word used to address the people who are the fans of Anime.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>This is the Intermediate level of the About thing is I am still dveloping it so just be patient</p>
+        </div>
+        <div class="course-col">
+            <h3>Siyan</h3>
+            <p>This is the Siyan level of the About thing is I am still dveloping it so just be patient</p>
+        </div>
+        <div class="course-col">
+            <h3>Super-Siyan</h3>
+            <p>This is the Super-Siyan level of the About thing is I am still dveloping it so just be patient</p>
+        </div>
+    </div>
+</section>
+<!----- Campus ----->
+<section class="campus">
+    <h1>What we Do</h1>
+    <p>This is the main theme of Otakus</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/watch.jpg">
+            <div class="layer">
+                <h3>Watch together with friends!</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/plan.jpg">
+            <div class="layer">
+                <h3>Plan stuff together to make things happen!</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/hangout.jpg">
+            <div class="layer">
+                <h3>Hangout together & make some good memories.</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!------ Motive ------>
+
+<section class="motive">
+    <h1>MOTIVE!</h1>
+    <p>The Motive of this community is simple.</p>
+    <div class="row">
+        <div class="motive-col">
+            <img src="images/yagami-Light.jpg">
+            <h3>Be the Best!</h3>
+            <p>WE wish to be the best community of Otakus</p>
+        </div>
+        <div class="motive-col">
+            <img src="images/jjk.jpg">
+            <h3>Largest Family</h3>
+            <p>To make this Family grow bigger and bigger</p>
+        </div>
+        <div class="motive-col">
+            <img src="images/naruto-baryon.jpg">
+            <h3>Never Give Up</h3>
+            <p>No matter what we strive to stay the best!</p>
+        </div>
+    </div>
+</section>
+
+<!------ Thoughts ------>
+<section class="thoughts">
+    <h1>What does the Core say</h1>
+    <p> This is what our Core feels about building the community.</p>
+    <div class="row">
+        <div class="thoughts-col">
+            <img src="images/user1.jpg">
+            <div>
+                <p>"This is the best place to find good friends and have a lot of fun"</p>
+                <h3>Sasuke Uchiha</h3>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+            </div>
+        </div>
+        <div class="thoughts-col">
+            <img src="images/user2.png">
+            <div>
+                <p>"We are working on it so hard to make this place a fun community and we also plan on taking this family to greater heights"</p>
+                <h3>Naruto Uzumaki</h3>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------ Call To Action ------>
+
+<section class="cta">
+    <h1>Contact us for any further queries<br>About being a fellow Otaku</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<!------ Footer ------>
+
+<section class="footer">
+    <h4>Finally</h4>
+    <p>Hello world this is Otaku's World where you can find great moments<br>To know more about this page follow us on our social media.</p>
+    <div class="icons">
+        <img src="images/fb.png">
+        <img src="images/twitter.png">
+        <img src="images/instagram.png">
+    </div>
+    <p>Made with <span>&#9825;</span> by Otakus</p>
+</section>
+<!--------JavaScript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navlinks");
+
+    function showMenu(){
+        navLinks.style.display = "block";
+    }
+    function hideMenu(){
+        navLinks.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
